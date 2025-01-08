@@ -1,0 +1,7 @@
+// hydration
+In JavaScript, hydration refers to the process where a server-rendered HTML page is "activated" with JavaScript on the client side. This happens in frameworks like React, where the HTML is initially rendered on the server for faster load times and SEO benefits. When the page loads in the browser, JavaScript attaches event listeners and makes the page interactive, turning the static HTML into a fully functional app.
+
+
+//virtual DOM , reconcillation and fibre
+The Virtual DOM is a lightweight copy of the actual DOM that React uses to efficiently update the UI. When the state of a component changes, React compares the new Virtual DOM with the previous one using a process called reconciliation to find the minimal changes needed. React then updates only the parts of the real DOM that changed, making updates faster. Fiber is React's underlying engine that handles this reconciliation process, breaking it into small, manageable tasks so that updates are smooth and responsive, even for large apps.
+https://github.com/acdlite/react-fiber-architecture
